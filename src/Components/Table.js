@@ -44,7 +44,7 @@ function Table({ students, setStudents }) {
           <table className="min-w-full table-auto">
             <thead>
               <tr className="font-bold">
-                {/* <td className="border px-4 py-2">No.</td> */}
+                <td className="border px-4 py-2">No.</td>
                 <td className="border px-4 py-2 text-center">NIM</td>
                 <td className="border px-4 py-2 text-center">Nama Lengkap</td>
                 <td className="border px-4 py-2 text-center">Aksi</td>
@@ -80,10 +80,10 @@ function Table({ students, setStudents }) {
 function Mhs({ id, nama, nim, onEdit, onDelete }) {
   return (
     <tr className="bg-gray-100">
-      {/* <td className="border px-4 py-2 break-all">{id}</td> */}
+      <td className="border px-4 py-2 break-all">{id}</td>
       <td className="border px-4 py-2 break-all">{nim}</td>
       <td className="border px-4 py-2 break-all">{nama}</td>
-      <td className="border px-4 py-2 flex   flex-col md:flex-row gap-2 break-all">
+      <td className="items-center justify-center border px-4 py-2 flex flex-col md:flex-row gap-2 break-all">
         <button
           onClick={onEdit}
           className="flex items-center justify-center p-2 bg-yellow-500 hover:bg-yellow-400 text-white rounded"
